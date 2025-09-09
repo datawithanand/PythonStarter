@@ -92,10 +92,21 @@
   print(f"The lst1 and lst2 has same memory location or not: {lst1 is lst2}")
 
 11. Find duplicates in a list **without using `set`** (return duplicates only once, order not important).
+
+  lst = [1,2,3,1,2,4,5,3,7,6,3,2,1,2,3,4]
+  dup_lst = []
+
+  for num in lst:
+    if lst.count(num) > 1:
+      if num not in dup_lst:
+        dup_lst.append(num)
+
+  print(f"The duplicate values in the given list: {dup_lst}")
+
 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-# 11. Find duplicates in a list **without using `set`** (return duplicates only once, order not important).
+# 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 
 
 
