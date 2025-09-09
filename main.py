@@ -6,6 +6,8 @@
 3- Create a tuple of numbers, unpack it into variables, and reverse those variables into a new tuple.
 '''
 
-num = int(input("Enter a number: "))
-for i in range(num,0,-1):
-  print('*' * i)
+def say_hello(a):
+  return a.upper()
+
+hello = say_hello('anand')
+print(hello)
