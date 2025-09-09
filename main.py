@@ -53,7 +53,16 @@
     print(f"If this is printed, then d value {d} is TRUTHY")
 
 6. Using a ternary expression, assign `"Adult"` if `age >= 18` else `"Minor"`. Print the result.
+
+  age = int(input("Enter the age: "))
+  result = "Adult" if age >= 18 else "minor"
+
+  print(f"The entered age {age} falls under {result} category.")
+
 7. Iterate over the string `"hello"` with `enumerate()` and print index and character on each line.
+
+
+
 8. Use `range()` to print all odd numbers from `1` to `19`. Use `for _ in range(...)` (use `_` as the loop variable).
 9. Write `is_even(num)` that returns `True`/`False` (single-line return). Include a one-line docstring and one `assert` test.
 10. Demonstrate `==` vs `is` with lists: make two lists with the same contents so that `==` is `True` and `is` is `False`. Print both comparisons.
@@ -61,7 +70,9 @@
 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-# 5. Given variables `a = None`, `b = ""`, `c = 0`, `d = "x"`, write code that prints which of these are truthy and which are falsy.
+# 7. Iterate over the string `"hello"` with `enumerate()` and print index and character on each line.
+
+
 
 
 
