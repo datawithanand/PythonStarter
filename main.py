@@ -108,6 +108,11 @@
 
 # 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 
+a,b,c, *rest = [1,2,3,4,5,6]
+print(f"The value of a is: {a}")
+print(f"The value of b is: {b}")
+print(f"The value of c is: {c}")
+print(f"The value of rest is: {rest}")
 
 
 
