@@ -74,13 +74,28 @@
       print(f"The number {_} is an odd number")
 
 9. Write `is_even(num)` that returns `True`/`False` (single-line return). Include a one-line docstring and one `assert` test.
+
+  def is_even(num): # Asset test is not written since it was not covered in my reading list
+    
+    Args: num is an integer number 
+  
+    return num % 2 == 0
+  
+  print(is_even(10))
+
 10. Demonstrate `==` vs `is` with lists: make two lists with the same contents so that `==` is `True` and `is` is `False`. Print both comparisons.
+
+  lst1 = [1,2,3]
+  lst2 = [1,2,3]
+
+  print(f"The lst1 and lst2 has same values or not: {lst1 == lst2}")
+  print(f"The lst1 and lst2 has same memory location or not: {lst1 is lst2}")
+
 11. Find duplicates in a list **without using `set`** (return duplicates only once, order not important).
 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-# 9. Write `is_even(num)` that returns `True`/`False` (single-line return). Include a one-line docstring and one `assert` test.
-
+# 11. Find duplicates in a list **without using `set`** (return duplicates only once, order not important).
 
 
 
