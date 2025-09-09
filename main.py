@@ -9,6 +9,17 @@
     print(f"The enter number {num} is odd number.")
 
 2. Create a list of numbers from `1` to `10`, reverse it, and print the reversed list (show two different ways).
+
+  lst = [1,2,3,4,5,6,7,8,9,10]
+  reversed_list1 = []
+
+  for num in range(len(lst)-1,-1,-1):
+    reversed_list1.append(lst[num])
+  reversed_list2 = lst[::-1]
+
+  print(f"The sorted list using method-1: {reversed_list1}")
+  print(f"The sorted list using method-2: {reversed_list2}")
+
 3. Replace every `"hello"` with `"hi"` in the string `"hello world, hello Python"` and print the result.
 4. Read a number and print whether it is divisible by both `3` and `5`, by `3` only, by `5` only, or by neither (use proper `if` / `elif` / `else`).
 5. Given variables `a = None`, `b = ""`, `c = 0`, `d = "x"`, write code that prints which of these are truthy and which are falsy.
@@ -21,5 +32,7 @@
 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-# 1. Write a program that reads an integer from `input()` and prints `"Even"` or `"Odd"`. Handle `0` and negative numbers correctly.
+# 2. Create a list of numbers from `1` to `10`, reverse it, and print the reversed list (show two different ways).
+
+
 
