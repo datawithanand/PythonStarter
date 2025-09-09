@@ -40,6 +40,18 @@
     print("The entered number is neither divisble by 3 or 5.")
 
 5. Given variables `a = None`, `b = ""`, `c = 0`, `d = "x"`, write code that prints which of these are truthy and which are falsy.
+
+  a,b,c,d = None, "", 0, "x"
+
+  if a:
+    print(f"If this is printed, then a value {a} is TRUTHY")
+  elif b:
+    print(f"If this is printed, then b value {b} is TRUTHY")
+  elif c:
+    print(f"If this is printed, then c value {c} is TRUTHY")
+  else:
+    print(f"If this is printed, then d value {d} is TRUTHY")
+
 6. Using a ternary expression, assign `"Adult"` if `age >= 18` else `"Minor"`. Print the result.
 7. Iterate over the string `"hello"` with `enumerate()` and print index and character on each line.
 8. Use `range()` to print all odd numbers from `1` to `19`. Use `for _ in range(...)` (use `_` as the loop variable).
