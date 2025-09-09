@@ -21,6 +21,11 @@
   print(f"The sorted list using method-2: {reversed_list2}")
 
 3. Replace every `"hello"` with `"hi"` in the string `"hello world, hello Python"` and print the result.
+
+  original_string = "hello world, hello Python"
+  modified_string = original_string.replace("hello", "hi")
+  print(f"The result of the modified original string is: {modified_string}")
+  
 4. Read a number and print whether it is divisible by both `3` and `5`, by `3` only, by `5` only, or by neither (use proper `if` / `elif` / `else`).
 5. Given variables `a = None`, `b = ""`, `c = 0`, `d = "x"`, write code that prints which of these are truthy and which are falsy.
 6. Using a ternary expression, assign `"Adult"` if `age >= 18` else `"Minor"`. Print the result.
@@ -32,7 +37,7 @@
 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-# 2. Create a list of numbers from `1` to `10`, reverse it, and print the reversed list (show two different ways).
+# 3. Replace every `"hello"` with `"hi"` in the string `"hello world, hello Python"` and print the result.
 
 
 
