@@ -1,13 +1,25 @@
+# EASY — check the basics (1–2 lines each)
 '''
-⚡ Easy (warm-up)
+1. Write a program that reads an integer from `input()` and prints `"Even"` or `"Odd"`. Handle `0` and negative numbers correctly.
 
-1 - Take a number input and print its binary form (bin()) and whether it is divisible by 3.
-2 - Given the string "Python\nRocks\tHard", print its length and also print it again without escape characters being interpreted (raw string).
-3- Create a tuple of numbers, unpack it into variables, and reverse those variables into a new tuple.
+  num = int(input("Enter the number to check if it's even or odd: "))
+  if num %2 == 0: # Handles all numbers including zero and negative numbers. No extra condition check required.
+    print(f"The enter number {num} is even number.")
+  else:
+    print(f"The enter number {num} is odd number.")
+
+2. Create a list of numbers from `1` to `10`, reverse it, and print the reversed list (show two different ways).
+3. Replace every `"hello"` with `"hi"` in the string `"hello world, hello Python"` and print the result.
+4. Read a number and print whether it is divisible by both `3` and `5`, by `3` only, by `5` only, or by neither (use proper `if` / `elif` / `else`).
+5. Given variables `a = None`, `b = ""`, `c = 0`, `d = "x"`, write code that prints which of these are truthy and which are falsy.
+6. Using a ternary expression, assign `"Adult"` if `age >= 18` else `"Minor"`. Print the result.
+7. Iterate over the string `"hello"` with `enumerate()` and print index and character on each line.
+8. Use `range()` to print all odd numbers from `1` to `19`. Use `for _ in range(...)` (use `_` as the loop variable).
+9. Write `is_even(num)` that returns `True`/`False` (single-line return). Include a one-line docstring and one `assert` test.
+10. Demonstrate `==` vs `is` with lists: make two lists with the same contents so that `==` is `True` and `is` is `False`. Print both comparisons.
+11. Find duplicates in a list **without using `set`** (return duplicates only once, order not important).
+12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-def say_hello(a):
-  return a.upper()
+# 1. Write a program that reads an integer from `input()` and prints `"Even"` or `"Odd"`. Handle `0` and negative numbers correctly.
 
-hello = say_hello('anand')
-print(hello)
