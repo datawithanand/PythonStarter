@@ -61,16 +61,25 @@
 
 7. Iterate over the string `"hello"` with `enumerate()` and print index and character on each line.
 
-
+  string = "hello"
+  for index,num in enumerate(string):
+    print(f"The value of {num} is stored in the index position {index}")
 
 8. Use `range()` to print all odd numbers from `1` to `19`. Use `for _ in range(...)` (use `_` as the loop variable).
+
+  for _ in range(1,20):
+    if _ %2 == 0:
+      pass
+    else:
+      print(f"The number {_} is an odd number")
+
 9. Write `is_even(num)` that returns `True`/`False` (single-line return). Include a one-line docstring and one `assert` test.
 10. Demonstrate `==` vs `is` with lists: make two lists with the same contents so that `==` is `True` and `is` is `False`. Print both comparisons.
 11. Find duplicates in a list **without using `set`** (return duplicates only once, order not important).
 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-# 7. Iterate over the string `"hello"` with `enumerate()` and print index and character on each line.
+# 9. Write `is_even(num)` that returns `True`/`False` (single-line return). Include a one-line docstring and one `assert` test.
 
 
 
