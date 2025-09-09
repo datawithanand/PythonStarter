@@ -27,6 +27,18 @@
   print(f"The result of the modified original string is: {modified_string}")
   
 4. Read a number and print whether it is divisible by both `3` and `5`, by `3` only, by `5` only, or by neither (use proper `if` / `elif` / `else`).
+
+  num = int(input("Enter a number to check if it's divisble by 3 & 5: "))
+
+  if num % 3 == 0 and num % 5 == 0:
+    print("The entered number is divisble by both 3 and 5.")
+  elif num % 3 == 0 and not num % 5 == 0:
+    print("The entered number is divisble by 3 but not by 5.")
+  elif not (num % 3 == 0) and num % 5 == 0:
+    print("The entered number is divisble by 5 but not by 3.")
+  else:
+    print("The entered number is neither divisble by 3 or 5.")
+
 5. Given variables `a = None`, `b = ""`, `c = 0`, `d = "x"`, write code that prints which of these are truthy and which are falsy.
 6. Using a ternary expression, assign `"Adult"` if `age >= 18` else `"Minor"`. Print the result.
 7. Iterate over the string `"hello"` with `enumerate()` and print index and character on each line.
@@ -37,7 +49,8 @@
 12. Use list unpacking to assign `a, b, c, *rest` from `[1,2,3,4,5,6]` and print the variables.
 '''
 
-# 3. Replace every `"hello"` with `"hi"` in the string `"hello world, hello Python"` and print the result.
+# 5. Given variables `a = None`, `b = ""`, `c = 0`, `d = "x"`, write code that prints which of these are truthy and which are falsy.
+
 
 
 
