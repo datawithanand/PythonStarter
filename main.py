@@ -1,53 +1,15 @@
 '''
-5. Write a program that counts how many times each word appears in the string: `"Python is great and Python is fun"`. Store the result in a dictionary.
+10. Write a function `transpose(matrix)` that returns the transpose of a 2D list (matrix). Do **not** use built-in libraries like NumPy. Example:
+    `[[1,2,3],[4,5,6]] → [[1,4],[2,5],[3,6]]`.
+11. Write a function `find_vowel_count(s)` that returns a dictionary of vowel counts from a string (case-insensitive). Example: `"Anand"` → `{'a':2}`.
+12. Write a program that:
 
-  string = "Python is great and Python is fun"
-  result = {}
-  for word in string.split(" "):
-    result[word] = string.count(word)
+* Takes a list of numbers from the user.
+* Prints the sum of only the even numbers.
+* If the list is empty, print `"No numbers provided"`.
 
-  print(f"The number of times each word repeated is: {result}")
-  
-6. Given a list `nums = [1, 2, 3, 4, 5]`, use a **for loop with enumerate** to print the index and the square of each number.
-
-  nums = [1, 2, 3, 4, 5]
-  for index,num in enumerate(nums):
-    print(f"The index value of {num} is {index} and the square is: {num*num}")
-
-7. Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`
-
-  lst = [1,2,3,2,4,5,1]
-  dup_list = []
-  for num in lst:
-    if lst.count(num) > 1:
-      if num not in dup_list:
-        dup_list.append(num)
-
-  print(f"The duplicate list is: {dup_list}")
-
-8. Create a dictionary `user = {"name": "Anand", "age": 33, "skills": ["Python", "SQL"]}`.
-   Loop through the dictionary and print keys and values. Add a new key `"location"` with any value. Remove `"age"`.
-
-  user = {"name": "Anand", "age": 33, "skills": ["Python", "SQL"]}
-  user['location'] = 'Chennai'
-  del user['age']
-  for key,value in user.items():
-    print(f"The key is: {key} and the value is: {value}")
-   
-9. Write a function `calculate_total(*args, **kwargs)` that:
-   Adds up all positional arguments (numbers). Then adds values from keyword arguments. Example: `calculate_total(1,2,3, x=4, y=5)` → `15`.
-
-    def calculate_total(*args, **kwargs):
-      count = 0
-      for index in range(0,len(args)):
-        count += args[index]
-      for key,value in kwargs.items():
-        count += value
-      return count
-
-    result = calculate_total(1,2,3, x=4, y=5)
-    print(f"The sum of the numbers: {result}")
-
+13. Write a function `find_common_elements(list1, list2)` that returns a sorted list of elements that appear in both lists, **without duplicates**. Example: `[1,2,3,3]` and `[2,3,4]` → `[2,3]`.
+14. Write a function `is_palindrome(s)` that checks if a string is a palindrome (ignores case and spaces). Example: `"Race car"` → `True`.
+15. (Scope + Functions) Write a nested function `outer()` that defines a variable `x = 10`. Inside it, define an `inner()` function that modifies `x` using `nonlocal`. Call both and print the modified `x`.
 '''
-# Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`.
 

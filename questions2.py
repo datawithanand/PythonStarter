@@ -44,7 +44,7 @@
 
 '''
 
-##################################################################################################################
+##########################################################################################################################################################################################
 
 '''
 1. Write a Python program that checks if a given number is divisible by both 3 and 5. Print `"FizzBuzz"` if true, else print the number itself.
@@ -85,3 +85,60 @@
   print(f"The default argument result: {default_example}")
 
 '''
+##########################################################################################################################################################################################
+
+'''
+5. Write a program that counts how many times each word appears in the string: `"Python is great and Python is fun"`. Store the result in a dictionary.
+
+  string = "Python is great and Python is fun"
+  result = {}
+
+  for word in string.split():   # split already handles spaces
+      if word in result:
+          result[word] += 1
+      else:
+          result[word] = 1
+
+  print(result)
+
+6. Given a list `nums = [1, 2, 3, 4, 5]`, use a **for loop with enumerate** to print the index and the square of each number.
+
+  nums = [1, 2, 3, 4, 5]
+  for index,num in enumerate(nums):
+    print(f"The index value of {num} is {index} and the square is: {num*num}")
+
+7. Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`
+
+  lst = [1,2,3,2,4,5,1]
+  dup_list = []
+  for num in lst:
+    if lst.count(num) > 1:
+      if num not in dup_list:
+        dup_list.append(num)
+
+  print(f"The duplicate list is: {dup_list}")
+
+8. Create a dictionary `user = {"name": "Anand", "age": 33, "skills": ["Python", "SQL"]}`.
+   Loop through the dictionary and print keys and values. Add a new key `"location"` with any value. Remove `"age"`.
+
+  user = {"name": "Anand", "age": 33, "skills": ["Python", "SQL"]}
+  user['location'] = 'Chennai'
+  del user['age']
+  for key,value in user.items():
+    print(f"The key is: {key} and the value is: {value}")
+
+9. Write a function `calculate_total(*args, **kwargs)` that:
+   Adds up all positional arguments (numbers). Then adds values from keyword arguments. Example: `calculate_total(1,2,3, x=4, y=5)` → `15`.
+
+    def calculate_total(*args, **kwargs):
+      count = 0
+      for index in range(0,len(args)):
+        count += args[index]
+      for key,value in kwargs.items():
+        count += value
+      return count
+
+    result = calculate_total(1,2,3, x=4, y=5)
+    print(f"The sum of the numbers: {result}")
+'''
+
