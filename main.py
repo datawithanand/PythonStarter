@@ -1,22 +1,25 @@
-## 🟢 Easy (warm-up, direct checks)
 '''
-1. Write a Python program that checks if a given number is divisible by both 3 and 5. Print `"FizzBuzz"` if true, else print the number itself.
+5. Write a program that counts how many times each word appears in the string: `"Python is great and Python is fun"`. Store the result in a dictionary.
 
-  number = int(input("Enter a number to check if it's divisble by 3 and 5: "))
-  if number%3 == 0 and number%5 == 0:
-    print("FizzBuzz")
-  else:
-    print(number)
+  string = "Python is great and Python is fun"
+  result = {}
+  for word in string.split(" "):
+    result[word] = string.count(word)
 
-2. Given a list of numbers `[2, 4, 6, 8, 10]`, write a function `is_even_list(lst)` that returns `True` if **all** numbers are even, otherwise `False`.
+  print(f"The number of times each word repeated is: {result}")
+  
+6. Given a list `nums = [1, 2, 3, 4, 5]`, use a **for loop with enumerate** to print the index and the square of each number.
+7. Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`.
+8. Create a dictionary `user = {"name": "Anand", "age": 33, "skills": ["Python", "SQL"]}`.
 
-  def is_even_list(lst):
+   * Loop through the dictionary and print keys and values.
+   * Add a new key `"location"` with any value.
+   * Remove `"age"`.
+9. Write a function `calculate_total(*args, **kwargs)` that:
 
-  result = is_even_list([2, 4, 7, 8, 10])
-  print(result)
-
-3. Take a string input from the user and check whether it is empty (hint: truthy/falsy). If empty, print `"Empty string"`, else print `"Non-empty string"`.
-4. Write a function `greet(name, emoji=":)")` that prints a greeting. Demonstrate calling it with positional arguments, keyword arguments, and default arguments.
+   * Adds up all positional arguments (numbers).
+   * Then adds values from keyword arguments.
+     Example: `calculate_total(1,2,3, x=4, y=5)` → `15`.
 '''
-
+# Write a program that counts how many times each word appears in the string: `"Python is great and Python is fun"`. Store the result in a dictionary.
 
