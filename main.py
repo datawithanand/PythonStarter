@@ -14,19 +14,40 @@
   for index,num in enumerate(nums):
     print(f"The index value of {num} is {index} and the square is: {num*num}")
 
-7. Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`.
+7. Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`
+
+  lst = [1,2,3,2,4,5,1]
+  dup_list = []
+  for num in lst:
+    if lst.count(num) > 1:
+      if num not in dup_list:
+        dup_list.append(num)
+
+  print(f"The duplicate list is: {dup_list}")
+
 8. Create a dictionary `user = {"name": "Anand", "age": 33, "skills": ["Python", "SQL"]}`.
+   Loop through the dictionary and print keys and values. Add a new key `"location"` with any value. Remove `"age"`.
 
-   * Loop through the dictionary and print keys and values.
-   * Add a new key `"location"` with any value.
-   * Remove `"age"`.
+  user = {"name": "Anand", "age": 33, "skills": ["Python", "SQL"]}
+  user['location'] = 'Chennai'
+  del user['age']
+  for key,value in user.items():
+    print(f"The key is: {key} and the value is: {value}")
+   
 9. Write a function `calculate_total(*args, **kwargs)` that:
+   Adds up all positional arguments (numbers). Then adds values from keyword arguments. Example: `calculate_total(1,2,3, x=4, y=5)` → `15`.
 
-   * Adds up all positional arguments (numbers).
-   * Then adds values from keyword arguments.
-     Example: `calculate_total(1,2,3, x=4, y=5)` → `15`.
+    def calculate_total(*args, **kwargs):
+      count = 0
+      for index in range(0,len(args)):
+        count += args[index]
+      for key,value in kwargs.items():
+        count += value
+      return count
+
+    result = calculate_total(1,2,3, x=4, y=5)
+    print(f"The sum of the numbers: {result}")
+
 '''
 # Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`.
 
-lst = [1,2,3,2,4,5,1]
-dup_list = []
