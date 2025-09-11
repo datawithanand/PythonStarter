@@ -26,5 +26,7 @@
    * Then adds values from keyword arguments.
      Example: `calculate_total(1,2,3, x=4, y=5)` → `15`.
 '''
-# Given a list `nums = [1, 2, 3, 4, 5]`, use a **for loop with enumerate** to print the index and the square of each number.
+# Write a program to find duplicates in a list without using a set. Example: `[1,2,3,2,4,5,1] → [1,2]`.
 
+lst = [1,2,3,2,4,5,1]
+dup_list = []
