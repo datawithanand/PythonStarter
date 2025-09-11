@@ -14,4 +14,3 @@
 12. Show the difference between copying a list by reference and copying by slicing: modify the child list in both cases and print the parent list to demonstrate behavior.
 '''
 # 1. `count_vowels(s)` — write a function that returns a dictionary with counts for each vowel (`a,e,i,o,u`) **case-insensitive**. Keys should be lowercase.
-
