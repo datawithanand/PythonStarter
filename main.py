@@ -13,6 +13,18 @@
     print(f"The final pair of the given nested list is: {result}")
 
 11. Write a function `find_vowel_count(s)` that returns a dictionary of vowel counts from a string (case-insensitive). Example: `"Anand"` → `{'a':2}`.
+
+    vowels = 'aeiou'
+    def find_vowels_count(s):
+        vowel_count = {}
+        for char in s.lower():
+            if char in vowels:
+                result[char] = s.lower().count(char)
+        return vowel_count
+
+    result = find_vowels_count('Anand')
+    print(f"The vowel count of given string: {result}")
+
 12. Write a program that:
 
 * Takes a list of numbers from the user.
@@ -23,6 +35,9 @@
 14. Write a function `is_palindrome(s)` that checks if a string is a palindrome (ignores case and spaces). Example: `"Race car"` → `True`.
 15. (Scope + Functions) Write a nested function `outer()` that defines a variable `x = 10`. Inside it, define an `inner()` function that modifies `x` using `nonlocal`. Call both and print the modified `x`.
 '''
+
+# 11. Write a function `find_vowel_count(s)` that returns a dictionary of vowel counts from a string (case-insensitive). Example: `"Anand"` → `{'a':2}`.
+
 
 
 
