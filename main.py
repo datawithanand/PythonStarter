@@ -40,11 +40,20 @@
     print(f"The sum of even numbers list is: {result}")
 
 13. Write a function `find_common_elements(list1, list2)` that returns a sorted list of elements that appear in both lists, **without duplicates**. Example: `[1,2,3,3]` and `[2,3,4]` → `[2,3]`.
+
+    def find_common_elements(list1, list2):
+        result = []
+        for num in lst1:
+            if num in lst2:
+                if num not in result:
+                    result.append(num)
+        return sorted(result)
+
+    print(find_common_elements([1,2,3,3], [2,3,4]))
+
 14. Write a function `is_palindrome(s)` that checks if a string is a palindrome (ignores case and spaces). Example: `"Race car"` → `True`.
 15. (Scope + Functions) Write a nested function `outer()` that defines a variable `x = 10`. Inside it, define an `inner()` function that modifies `x` using `nonlocal`. Call both and print the modified `x`.
 '''
 
-
-
-
+# 14. Write a function `is_palindrome(s)` that checks if a string is a palindrome (ignores case and spaces). Example: `"Race car"` → `True`.
 
