@@ -61,17 +61,16 @@
     print(result)
 
 15. (Scope + Functions) Write a nested function `outer()` that defines a variable `x = 10`. Inside it, define an `inner()` function that modifies `x` using `nonlocal`. Call both and print the modified `x`.
+
+    def outer_fun():
+        x = 10
+        print(f"x value before modified: {x}")
+        def inner_fun():
+            nonlocal x
+            x = 20
+            print(f"x value inside inner_fun: {x}")
+        inner_fun()
+
+    outer_fun()
+
 '''
-
-def outer_fun():
-    x = 10
-    print(f"x value before modified: {x}")
-    def inner_fun():
-        nonlocal x
-        x = 20
-        print(f"x value inside inner_fun: {x}")
-    inner_fun()
-    print(f"x value after inner_fun call: {x}")
-
-outer_fun()
-
