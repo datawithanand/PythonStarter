@@ -25,18 +25,25 @@
     result = find_vowels_count('Anand')
     print(f"The vowel count of given string: {result}")
 
-12. Write a program that:
+12. Write a program that: Takes a list of numbers from the user. Prints the sum of only the even numbers. If the list is empty, print `"No numbers provided"`.
 
-* Takes a list of numbers from the user.
-* Prints the sum of only the even numbers.
-* If the list is empty, print `"No numbers provided"`.
+    def sum_even_nums(lst):
+        sum_even_count = 0
+        if not lst:
+            return 'No numbers provided'
+        for num in lst:
+            if num %2 ==0 :
+                sum_even_count += num
+        return sum_even_count
+    
+    result = sum_even_nums([])
+    print(f"The sum of even numbers list is: {result}")
 
 13. Write a function `find_common_elements(list1, list2)` that returns a sorted list of elements that appear in both lists, **without duplicates**. Example: `[1,2,3,3]` and `[2,3,4]` → `[2,3]`.
 14. Write a function `is_palindrome(s)` that checks if a string is a palindrome (ignores case and spaces). Example: `"Race car"` → `True`.
 15. (Scope + Functions) Write a nested function `outer()` that defines a variable `x = 10`. Inside it, define an `inner()` function that modifies `x` using `nonlocal`. Call both and print the modified `x`.
 '''
 
-# 11. Write a function `find_vowel_count(s)` that returns a dictionary of vowel counts from a string (case-insensitive). Example: `"Anand"` → `{'a':2}`.
 
 
 
