@@ -52,8 +52,14 @@
     print(find_common_elements([1,2,3,3], [2,3,4]))
 
 14. Write a function `is_palindrome(s)` that checks if a string is a palindrome (ignores case and spaces). Example: `"Race car"` → `True`.
+
+    def is_palindrome(s):
+        return s.lower().replace(" ","") == s.lower().replace(" ","")[::-1]
+
+    string = "Race car"
+    result = is_palindrome(string)
+    print(result)
+
 15. (Scope + Functions) Write a nested function `outer()` that defines a variable `x = 10`. Inside it, define an `inner()` function that modifies `x` using `nonlocal`. Call both and print the modified `x`.
 '''
-
-# 14. Write a function `is_palindrome(s)` that checks if a string is a palindrome (ignores case and spaces). Example: `"Race car"` → `True`.
 
