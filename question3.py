@@ -1,4 +1,5 @@
-'''1. Write a function that returns the factorial of a number using both recursion and iteration.
+'''
+1. Write a function that returns the factorial of a number using both recursion and iteration.
 2. Given a list of integers, return a dictionary with the number as the key and its frequency as the value.
 3. Implement a function to check if two strings are anagrams of each other.
 4. Write a program to find the second largest number in a list without using built-in functions like `sorted()`.
