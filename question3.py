@@ -43,4 +43,5 @@
 17. Write a function to reverse the words in a string without using `split()`. Example: `"Hello World"` → `"World Hello"`.
 18. Implement a function that takes a list and returns a new list with only the unique elements (preserving order).
 19. Write a function that finds all pairs of numbers in a list that add up to a target sum.
-20. Create a decorator that logs the arguments and result of a function.'''
+20. Create a decorator that logs the arguments and result of a function.
+'''
