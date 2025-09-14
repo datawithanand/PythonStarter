@@ -1,7 +1,32 @@
 '''
 1. Write a function that returns the factorial of a number using both recursion and iteration.
 2. Given a list of integers, return a dictionary with the number as the key and its frequency as the value.
+
+  lst = [1,2,3,4,5,6,5,1,2,3,4,7,8,8,7,9]
+
+  result = {}
+
+  for num in lst:
+    if num in result:
+      result[num] += 1
+    else:
+      result[num] = 1
+
+  print(f"The count of given list of numbers: {result}")
+
 3. Implement a function to check if two strings are anagrams of each other.
+
+  def anagrams_check(string1, string2):
+    if len(string1) != len(string2):
+      return False
+    elif sorted(string1.lower().strip()) == sorted(string2.lower().strip()):
+      return True
+    else:
+      return False
+
+  result = anagrams_check('silenT', 'listen')
+  print(result)
+
 4. Write a program to find the second largest number in a list without using built-in functions like `sorted()`.
 5. Given a string, return the first non-repeating character.
 6. Write a function that flattens a nested list. Example: `[1, [2, [3, 4]], 5] → [1,2,3,4,5]`.
